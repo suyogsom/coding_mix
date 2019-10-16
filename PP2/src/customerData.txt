@@ -1,0 +1,20 @@
+
+
+Customer information 
+ID = 1
+First Name = anup 
+Last Name = patil
+Amount = 344.0
+Card information
+Card number = d8777fd0abea7b44c10769b5e62b0039 
+Expire Date = 12313
+
+
+Customer information 
+ID = 2
+First Name = pankaj 
+Last Name = jain
+Amount = 356.0
+Card information
+Card number = d8777fd0abea7b44c10769b5e62b0039 
+Expire Date = 234

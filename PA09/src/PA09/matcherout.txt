@@ -1,0 +1,31 @@
+Scraper program output = 
+
+Title =Go	Suggested retail price = Suggested Retail Price: $499.00
+Title =Apple iPad with Retina Display MD511LL/A (32GB, Wi-Fi, Black) 4th Generation	Suggested retail price = Suggested Retail Price: $599.00
+Title =Apple ME277LL/A 8-inch iPad Mini 2 with Retina Display (1.30GHz     Dual-core Processor, 32GB GB Flash Memory, 1 GB RAM, Wi-Fi, iOS 7 Operating System) Space Gray	Suggested retail price = Suggested Retail Price: $499.00
+Title =Apple MGKM2LL/A iPad Air 2, 9.7-Inch Retina Display, 64GB, Wi-Fi (Silver) US Version	Suggested retail price = Suggested Retail Price: $599.00
+Title =Apple iPad 2 MC769LL/A 2nd Generation Tablet (16GB, Wifi, Black) [Certified Pre-Owned]	Suggested retail price = Suggested Retail Price: $49.00
+Title =Aduro FACIO Case with Bluetooth Removable Keyboard for Apple iPad Air (Red/Grey)	Suggested retail price = Suggested Retail Price: $399.99
+Title =Apple iPad with Retina Display MD522LL/A (16GB, Wi-Fi + Verizon, Black) 4th Generation	Suggested retail price = Suggested Retail Price: $599.00
+Title =Teenitor New White iPad 2 Digitizer Touch Screen Front Glass Assembly	Suggested retail price = Suggested Retail Price: $499.00
+Title =iPad Pro Case, [Heavy Duty] i-Blason Apple iPad Pro 2015 Armorbox [Dual Layer] Hybrid Full-body Protective Kickstand Case with Front Cover WITHOUT Screen Protector (Black)	Suggested retail price = Suggested Retail Price: $499.00
+Title =Otterbox Defender Series Case for iPad Air - Frustration Free Packaging - Black	Suggested retail price = Suggested Retail Price: $89.95
+Title =Apple iPad MD328LL/A (16GB, Wi-Fi, White) 3rd Generation	Suggested retail price = Suggested Retail Price: $499.00
+Title =Apple Pencil for iPad Pro	Suggested retail price = Suggested Retail Price: $429.00
+Title =Apple iPad 2 MC979LL/A 2nd Generation Tablet (16GB, Wifi, White) (Certified Refurbished)	Suggested retail price = Suggested Retail Price: $329.99
+Title =Apple iPad Mini 2 with Retina Display ME279LL/A (16GB, Wi-Fi, White with Silver) (Certified Refurbished)	Suggested retail price = Suggested Retail Price: $399.00
+Title =Apple iPad 2 MC770LL/A Tablet (32GB, Wifi, Black) 2nd Generation	Suggested retail price = Suggested Retail Price: $799.99
+Title =Apple iPad Pro (128GB, Wi-Fi + Cellular, Gold) - 12.9&quot; Display	Suggested retail price = Suggested Retail Price: $1,079
+Title =Apple MF432LL/A Black 16GB iPad mini with Wi-Fi	Suggested retail price = Suggested Retail Price: $299.99
+Title =Touchfire Ultra-Protective Magnetic Case &amp; 3-D Keyboard AND Storage Case AND Wall Mount - BUNDLE for iPad 2,3,4 (Red)	Suggested retail price = Suggested Retail Price: $104.97
+Title =Touchfire Ultra-Protective Magnetic Case &amp; 3-D Keyboard AND Storage Case AND Wall Mount - BUNDLE for iPad Air 2 (Red)	Suggested retail price = Suggested Retail Price: $104.97
+Title =Bobonida Adapter with USB Data Sync Charging Cables Travel Charging Ports for iPhone, iPad, Tablet C25	Suggested retail price = Suggested Retail Price: $599.00
+Title =iPad Air 2 Case (iPad 6) - KHOMO DUAL Super Slim Black Cover with Rubberized back and Smart Feature (Built-in magnet for sleep / wake feature) For Apple iPad Air 2 Tablet	Suggested retail price = Suggested Retail Price: $49.99
+Title =iPad Pro 9.7 case, FYY[Full Protection]Premium PU Leather Case with Card Slots, Note Holder, Hand Strap for iPad Pro 9.7 inch (2016) Black	Suggested retail price = Suggested Retail Price: $30.88
+Title =ULAK iPad Mini Case [KNOX ARMOR] Full-Body Rugged Hybrid Protective Case Kickstand for Apple iPad Mini 1/2/3 with Built-in Screen Protector (Black)	Suggested retail price = Suggested Retail Price: $39.99
+Title =iPad Air Case,ULAK Hybrid Dual Layer Case Cover with Built-in KickStand for Apple iPad Air 5th Gen 2013 (Black/Green)	Suggested retail price = Suggested Retail Price: $39.99
+Title =Apple iPad Pro Case - ProCase Leather Stand Folio Case Cover for 2015 Apple iPad Pro 12.9 inch, with Multiple Viewing angles, auto Sleep/Wake, Document Card Pocket (Black)	Suggested retail price = Suggested Retail Price: $39.99
+Title =iPad Air 2 Tuxedo Cases Cool Gray	Suggested retail price = Suggested Retail Price: $699.00
+Title =iPad Air Case,ULAK Hybrid Dual Layer Case Cover with Built-in KickStand for Apple iPad Air 5th Gen 2013 (Black/Blue)	Suggested retail price = Suggested Retail Price: $39.99
+Title =Apple iPad Air FD785LL/A 16GB, Wi-Fi - Black Certified Refurbished	Suggested retail price = Suggested Retail Price: $399.99
+Number of items28
