@@ -323,10 +323,12 @@ public class Array_problems {
     } 
     
     public static void reverse_array_from_given_element(int arr[], int k) { 
-        for (int i = 0; i < arr.length; i += k) { 
+        
+    	// look carefully for increment
+    	for (int i = 0; i < arr.length; i += k) { 
             int left = i; 
       
-            // to handle case when k is not multiple of n 
+            // to handle case when k is not multiple of length of the array 
             int right = Math.min(i + k - 1, arr.length - 1); 
             int temp; 
               
@@ -341,5 +343,4 @@ public class Array_problems {
         }      
         Arrays.stream(arr).forEach(s->System.out.println(s));
     } 
-
 }
