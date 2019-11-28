@@ -1,113 +1,25 @@
-package imp_questions;
+package array_question;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
 
-public class Array_problems {
+public class Array_set_1 {
 	
 	public static void main(String[] args) {
-		
-//		find_unique_removing_duplicate_array_hashMap(new int[] {1,2,4,4,5,5,3,1,6,9});
-//		find_ONLY_duplicate_array_set(new int[] {1,2,4,4,5,5,3,1,6,9});
-//		get_max_and_min_occuring_Number_Array(new int[]{21,1,1,2,21,111,212,5});
-//		find_missing_element_in_array(new int[] {3,5,7,8,9,10});
-//		find_subbarray_sum(new int[] {-5,-3,-2,4,-8},-10);		
-//		find_subarray_sum_new(new int[] {-5,-3,-2,4},-8);
+				
+//		find_subarray_sum(new int[] {-5,-6,-2,4},-8);
 //		find_triplet_soThat_sumOfTwo_equalsToThird(new int[] {1,2,3,4,5,6});
 //		merge_two_unsorted_srrays(new int[] {4,2,0},new int[] {5,3,1});
+//		merge_two_unsorted_srrays_new(new int[] {4,2,0},new int[] {5,3,1});
 //		rearrange_max_min_alternative(new int[] {5,6,3,4,2,1});
 //		get_inversion_count(new int[] {1,20,4,30});
 //		find_a_pair(new int[] {5,2},new int[] {3,5,6,8});
 //		sort_array_012(new int[] {2,2,1,1,0,0,2,2,1,1});
 //		array_equilibrium(new int[] {-2,1,1,2,-3 });
-//		reverse_array_from_given_element(new int[] {1,2,3,4,5},3);
-	
 	}
 
-	// Given unsorted array print ONLY unique elements excluding duplicate elements 
-	public static void find_unique_removing_duplicate_array_hashMap(int[] arr) {		 
-		Arrays.sort(arr);
-		HashMap<Integer, Integer> map= new HashMap<>();
-		int count = 1;
-		
-		// put method will return null if pair is new, else it will return count of value of key present 
-		// put key, if key is not new then get count and put it else just put it in map
-		for(int a:arr) 
-		   if(map.put(a,count)!=null) 
-			   count=map.put(a, ++count);		
-
-		for(Map.Entry<Integer, Integer> entry : map.entrySet()) 
-			if(entry.getValue()==Collections.min(map.values())) 
-				System.out.println(entry.getKey()); 		   
-	}
-	
-	// Given unsorted array print only duplicate elements
-	public static void find_ONLY_duplicate_array_set(int[] arr) {		
-		Arrays.sort(arr);
-		
-		// set will not have duplicate elements
-		Set<Integer> set = new HashSet<>();
-		// so while adding if it gives false means that element is duplicate, for new element it will give back true value
-		   for(int x:arr)
-			if(set.add(x)==false) 
-			 System.out.println(x);			 
-	}
-	
-	// Given unsorted array find out maximum and minimum occurring number
-	public static void get_max_and_min_occuring_Number_Array(int[] arr){
-
-		Map<Integer,Integer> map = new HashMap<>();
-		ArrayList<Integer> maxList = new ArrayList<>();
-		ArrayList<Integer> minList = new ArrayList<>();
-		int count = 1;
-
-		for(int x:arr) {
-	    	if(map.put(x,count)!=null) { count=map.put(x, ++count);}
-	    	}
-
-		for (Map.Entry<Integer,Integer> entry : map.entrySet()){
-		  if(entry.getValue()==Collections.max(map.values())){	maxList.add(entry.getKey());	      
-		  }
-
-		  if(entry.getValue()==Collections.min(map.values())){	minList.add(entry.getKey());	      
-		  }
-		}
-		
-		System.out.println("Max occuring numbers : " + maxList);
-		System.out.println("Min occuring numbers : " + minList);
-	}
-	
-	// Given unsorted array find missing element 
-	public static void find_missing_element_in_array(int[] arr) {
-		
-		Arrays.sort(arr);
-	    HashSet<Integer> set = new HashSet<>();
-
-	    // add all numbers from fist element of array to last element of array Ex. {2,3,5} So add 2,3,4,5
-	    for (int i = arr[0]; i < arr[arr.length - 1]; i++) {
-	        set.add(i);
-	    }
-
-	    // remove existing numbers of array from set
-	    for (int i = 0; i < arr.length; i++) {
-	        set.remove(arr[i]);
-	    }
-
-	    // remaining numbers are missing numbers
-	    for (int x : set) {
-	        System.out.print(x + " ,");
-	    }
-    }
-		
-	public static void find_subbarray_sum(int[] arr, int sum) {
+	// sub array means it is continuous, it can be a single element BUT NOT discrete elements	
+	public static void find_subarray_sum(int[] arr, int sum) {
 		int count =0, first = 0, last =0;
-		
-		Arrays.sort(arr);
 		
 		// sliding window approach O(n^2), start from one end 
 		for(int i=0;i<arr.length;i++) {
@@ -118,38 +30,9 @@ public class Array_problems {
 			if(curSum == sum) { first = i; last =j; System.out.println("Between index  " + first + " and " + last); count++;}				
 			}
 		}		
-		System.out.println("Total number of subarrays are " + count);
+		System.out.println("Total number of subarrays are " + count); 
 	}
 	
-	// Given an unsorted array of integers, find a subarray which adds to a given number. If there are more than one subarrays with the sum as the given number, print any of them
-	public static void find_subarray_sum_new(int[] arr, int sum) {
-		//cur_sum to keep track of cumulative sum till that point, this algorithm runs O(n)
-        int cur_sum = 0,start = 0,end = -1;
-
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
-
-        Arrays.sort(arr);
-
-        for (int i = 0; i < arr.length; i++) {
-            cur_sum = cur_sum + arr[i];
-            //check whether cur_sum - sum = 0, if 0 it means
-            //the sub array is starting from index 0- so stop
-            if (cur_sum - sum == 0) {
-                start = 0; end = i;
-               
-                System.out.println("Sum found between indexes " + start + " to " + end);
-            }
-            //if hashMap already has the value, means we already
-            // have subarray with the sum - so stop
-            if (hashMap.containsKey(cur_sum - sum)) {
-                start = hashMap.get(cur_sum - sum) + 1;
-                end = i;                
-            }
-            //if value is not present then add to hashmap
-            hashMap.put(cur_sum, i);
-  
-        }         
-	}
 	
 	// Given an array of integers you have to find three numbers such that sum of two elements equals the third element
 	public static void find_triplet_soThat_sumOfTwo_equalsToThird(int[] arr) {
@@ -190,8 +73,7 @@ public class Array_problems {
         int[] arr3 = new int[arr1.length+arr2.length];
         
         // Traverse both array 
-        while (i<arr1.length && j <arr2.length) 
-        { 
+        while (i<arr1.length && j <arr2.length)  { 
             // Check if current element of first 
             // array is smaller than current element 
             // of second array. If yes, store first 
@@ -213,6 +95,30 @@ public class Array_problems {
         
        Arrays.stream(arr3).forEach(s->System.out.println(s));
     } 
+    
+    public static void merge_two_unsorted_srrays_new(int[] nums1, int[] nums2) { 
+    	int k =0;	
+        int m = nums1.length, n = nums2.length;
+        Arrays.sort(nums1);Arrays.sort(nums2);
+        int[] arr3 = new int[nums1.length+nums2.length];
+        
+        while(n + m > 0){
+            if(n == 0 || m == 0)
+                 break;
+ 				
+             if(nums1[m - 1] > nums2[n - 1]){
+                 arr3[k++] = nums1[m - 1];
+                 m--;
+             }
+             else{
+                 arr3[k++] = nums2[n - 1];
+                 n--;
+             }
+         }
+        
+       Arrays.stream(arr3).forEach(s->System.out.println(s));
+    } 
+    
     
     // Prints max at first position, min at second position 
     // second max at third position, second min at fourth 
@@ -320,27 +226,5 @@ public class Array_problems {
   
             leftsum += arr[i]; 
         }  
-    } 
-    
-    public static void reverse_array_from_given_element(int arr[], int k) { 
-        
-    	// look carefully for increment
-    	for (int i = 0; i < arr.length; i += k) { 
-            int left = i; 
-      
-            // to handle case when k is not multiple of length of the array 
-            int right = Math.min(i + k - 1, arr.length - 1); 
-            int temp; 
-              
-            // reverse the sub-array [left, right] 
-            while (left < right) { 
-                temp=arr[left]; 
-                arr[left]=arr[right]; 
-                arr[right]=temp; 
-                left+=1; 
-                right-=1; 
-            } 
-        }      
-        Arrays.stream(arr).forEach(s->System.out.println(s));
     } 
 }
