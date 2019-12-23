@@ -5,9 +5,10 @@ public class string_set_2 {
 	public static void main(String[] args) {
 //	    remove_vowels("anup");
 //		System.out.println("Is string palindrome? " + isStringPalindrome("anna"));
+		System.out.println("Is string palindrome? " + isStringPalindrome_new("anna"));
 //	    reverse_string("anup");
 //		reverse_words_in_string("anup dinesh patil");
-		longest_palindrome("abaaccd");		
+//		longest_palindrome("abaaccd");		
 	}
 	
 	public static void remove_vowels(String name){
@@ -50,6 +51,21 @@ public class string_set_2 {
 		  return isStringPalindrome(str.substring(1, str.length() - 1));
 		} 
 		else return false;	  
+	}
+	
+	public static Boolean isStringPalindrome_new(String str) {
+		if (str.length() < 2)
+			  return true;
+
+		int j=0;
+		
+		for(int i=str.length()-1;i>=0;i--) {
+			if(str.charAt(i)!=str.charAt(j++)) {
+				return false;
+			}				
+		}
+		
+		return true;
 	}
 	
 	public static void reverse_words_in_string(String str) {

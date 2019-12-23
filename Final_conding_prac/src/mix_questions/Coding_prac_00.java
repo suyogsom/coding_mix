@@ -21,7 +21,6 @@ public class Coding_prac_00 {
 		System.out.println("Summ of all digits : " + sum);
 	}
 
-
 	public static void  reverse_inteter_Number(int num){
 		long res = 0;
 		while (num > 0) {
@@ -40,9 +39,9 @@ public class Coding_prac_00 {
 
 		int result = 0;
 		
-		for(int i=0;i<num.length();i++) {
+		for(int i=0;i<num.length();i++) 
 			result = result * 10 + num.charAt(i) - '0';
-		}
+		
 
 		System.out.println("Number is : " + result);
 	}

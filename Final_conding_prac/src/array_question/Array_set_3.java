@@ -9,7 +9,9 @@ public class Array_set_3 {
 		
 //		finding_leader_in_array(new int[] {16,17,4,3,5,2});
 //		reverse_array_in_groups(new int[] {1,2,3,4},2);
-		find_kth_smallest_element_unsorted_array(new int[] {5,4,2,8,6,3},2);
+//		find_kth_smallest_element_unsorted_array(new int[] {5,4,2,8,6,3},2);
+//		rotate_array_right_by_some_rotations(new int[] {1,2,3,4,5,6},2);
+		rotate_array_left_by_some_rotations(new int[] {1,2,3,4,5,6},2);
 	}
 
 
@@ -64,4 +66,43 @@ public class Array_set_3 {
 		System.out.println(k+" th smallest element is : "+nums[k-1]);
 		
 	}
+	
+	// rotate array to right with given number of rotations
+	static void rotate_array_right_by_some_rotations(int[] nums, int numOfRotations) {
+		 //Rotate the given array by n times toward right
+        for(int i = 0; i < numOfRotations; i++){
+            int j, last;
+            //Stores the last element of array
+            last = nums[nums.length-1];
+
+            for(j = nums.length-1; j > 0; j--){
+                //Shift element of array by one
+                nums[j] = nums[j-1];
+            }
+            //Last element of array will be added to the start of array.
+            nums[i] = last;
+        }
+        System.out.println("After rotation");
+        Arrays.stream(nums).forEach(s->System.out.print(s + " "));
+	}
+	
+	// rotate array to right with given number of rotations
+		static void rotate_array_left_by_some_rotations(int[] nums, int numOfRotations) {
+			 //Rotate the given array by n times toward right
+	        for(int i = 0; i < numOfRotations; i++){
+	            int j, first;
+	            //Stores the first element of array
+	            first = nums[0];
+
+	            for(j = 0; j < nums.length-1; j++){
+	                //Shift element of array by one
+	                nums[j] = nums[j+1];
+	            }
+	            //First element of array will be added to the end of array.
+	            nums[nums.length-1] = first;
+	        }
+	        System.out.println("After rotation");
+	       // System.out.println(Arrays.toString(nums));
+	        Arrays.stream(nums).forEach(s->System.out.print(s + " "));
+		}		
 }

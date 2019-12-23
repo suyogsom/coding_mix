@@ -7,7 +7,8 @@ public class string_set_1 {
 	
 	public static void main(String[] args) {
 		
-//		string_has_uniques_characters("abcab");
+//		string_has_uniques_characters("leetcode");
+		first_uniques_character_string_new("leetcode");
 //		string_permutations("nope","pone");
 //		string_permutations_anotherWay("nope","pone");
 //		palindrome_permutation("code");
@@ -38,7 +39,24 @@ public class string_set_1 {
 				list.stream().forEach(s->System.out.println(s));
 			}
 		}
+	
+	public static void first_uniques_character_string_new(String str) {
 		
+		char unique = str.charAt(0);
+		
+		for(int i=0;i<str.length();i++) { int count=0; 
+			for(int j=0;j<str.length();j++) {
+				if(i!=j && str.charAt(i)!=str.charAt(j)) {
+					count++;
+					if(count==1)unique= str.charAt(j);
+				}
+			}
+		}
+		
+		System.out.println("First unique char in string is " + unique);
+	}
+		
+	
 		// assumption is characters are ASCII
 	public static void string_permutations(String a, String b) {
 			

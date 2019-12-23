@@ -8,8 +8,8 @@ public class Array_set_1 {
 				
 //		find_subarray_sum(new int[] {-5,-6,-2,4},-8);
 //		find_triplet_soThat_sumOfTwo_equalsToThird(new int[] {1,2,3,4,5,6});
-//		merge_two_unsorted_srrays(new int[] {4,2,0},new int[] {5,3,1});
-//		merge_two_unsorted_srrays_new(new int[] {4,2,0},new int[] {5,3,1});
+//		merge_two_unsorted_arrays(new int[] {4,2,0},new int[] {5,3,1});
+//		merge_two_unsorted_arrays_new(new int[] {4,2,0},new int[] {5,3,1});
 //		rearrange_max_min_alternative(new int[] {5,6,3,4,2,1});
 //		get_inversion_count(new int[] {1,20,4,30});
 //		find_a_pair(new int[] {5,2},new int[] {3,5,6,8});
@@ -66,7 +66,7 @@ public class Array_set_1 {
 	
 	 // Merge arr1[0..n1-1] and arr2[0..n2-1]  
     // into arr3[0..n1+n2-1] 
-    public static void merge_two_unsorted_srrays(int[] arr1, int[] arr2) { 
+    public static void merge_two_unsorted_arrays(int[] arr1, int[] arr2) { 
         int i = 0, j = 0, k = 0; 
       
         Arrays.sort(arr1);Arrays.sort(arr2);
@@ -96,7 +96,7 @@ public class Array_set_1 {
        Arrays.stream(arr3).forEach(s->System.out.println(s));
     } 
     
-    public static void merge_two_unsorted_srrays_new(int[] nums1, int[] nums2) { 
+    public static void merge_two_unsorted_arrays_new(int[] nums1, int[] nums2) { 
     	int k =0;	
         int m = nums1.length, n = nums2.length;
         Arrays.sort(nums1);Arrays.sort(nums2);
