@@ -3,7 +3,7 @@ package array_question;
 import java.util.ArrayList;
 import java.util.List;
 
-public class leet_code_array {
+public class leet_code_array_set_1 {
 
 	public static void main(String[] args) {
 		
